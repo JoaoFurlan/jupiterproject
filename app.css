@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* starts here */
+
+html{
+    font-family: 'Zen Kurenaido', sans-serif;
+    
+}
+
+body{
+    margin: .5rem 2rem;
+    display: flexbox;
+    background-color: rgb(1, 1, 14);
+    color: white;
+    font-weight: 400;
+}
+/*  */
+.main-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.logo{
+    width: 2rem;
+}
+
+li{
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 0.8rem;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.second-header{
+    /* background-color: blueviolet; */
+    margin-top: 3rem;
+    margin-bottom: 15rem;
+}
+.img-and-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.note-and-btn{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.main-title{
+    font-size: 10rem;
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: -5rem;
+    font-weight: 700;
+}
+
+.main-img{
+    width: 25rem;
+    margin-bottom: -5rem;
+    border-radius: 200px;
+    box-shadow: 0 0 2rem rgb(3, 3, 3);
+}
+.second-img{
+    width: 15rem;
+    border-radius: 200px;
+    box-shadow: 0 0 2rem rgb(3, 3, 3);
+    border:1px solid rgb(0,0,0,30%);
+    margin-left: 3rem;
+    
+    
+}
+#first-note{
+    width: 25rem;
+}
+
+.buy-ticket-btn{
+    background: rgb(38, 28, 92);
+    border: 1px rgb(38, 28, 92) solid;
+    padding-inline: 1.5rem;
+    border-radius: 20px;
+    color: white;
+}
+.a-bit-of-text{
+    display: flex;
+    justify-content:space-between ;
+}
+.p-explanation,.n-explanation{
+    width: 25rem;
+    border: 1px solid white;
+    padding: .5rem;
+}
+.planet-j-explanation{
+    margin-bottom: 10rem;
+}
+
+.gallery-of-j{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.gallery-img{
+    width: 300px;
+}
+.gallery-of-jupiters-life{
+    margin-bottom: 10rem;
+}
+.span-div{
+    background-color: rgb(51, 0, 80);
+    width: auto;
+    height: 5rem;
+    margin-bottom: 10rem;
+}
+.p-process-of{
+width: 15rem;
+}
+
+.process-of-getting-in-jupiter{
+    margin-bottom: 10rem;
+}
+.tickets-div{
+    display: flex;
+    width: 1000px;
+    justify-content: start;
+    
+}
+.inner-tickets-div{
+    padding: 1rem;
+    margin-inline: 1rem;
+    border: 1px solid white;
+}
+.s-tickets{
+    margin-bottom: 10rem;
+}
+.s-lifelong-facts{
+    margin-bottom: 10rem;
+}
+.d-lifelong-facts{
+    background-color: blueviolet;
+    width: auto;
+    height: 15rem;
+    margin-bottom: 10rem;
+}
+.d-news{
+    display: flex;
+    gap: 1rem 
+}
+.inner-news{
+    border: solid 1px white;
+    padding-inline: 1rem;
+}
+.s-news{
+    margin-bottom: 10rem;
+}
+.contact-us-btn{
+    background: none;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+.btn-center{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+

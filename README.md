@@ -1,4 +1,4 @@
-# jupiterproject
+# Jupiterian Travel Project ✨🖖
 
 
 This is a study project in progress, where I'm applying my knowledge and skills, and the new ones to come. <br>

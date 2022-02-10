@@ -53,26 +53,74 @@ html{
     font-family: 'Zen Kurenaido', sans-serif;
     
 }
-
 body{
-    margin: .5rem 2rem;
+    margin: 2rem 2rem;
     display: flexbox;
     background-color: rgb(1, 1, 14);
     color: white;
     font-weight: 400;
 }
-/*  */
+/*SKY */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.sky {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  min-height: auto;
+}
+
+.star {
+  --x: 0%;
+  --y: 0%;
+  --opacity: 1;
+  --size: 1;
+  --delay: 0s;
+  --color: #fff;
+
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 2px;
+  height: 2px;
+  transform: scale(var(--size));
+  animation: blink 1s ease-in-out infinite alternate;
+  animation-delay: var(--delay);
+  opacity: var(--opacity);
+  border-radius: 50%;
+  background-color: var(--color);
+  box-shadow: 0 0 8px var(--color);
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+}
+
+/* */
+
+
 .main-nav{
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 1rem;
+
 }
+
 
 .logo{
     width: 2rem;
 }
+
 
 li{
     display: inline-block;
@@ -97,7 +145,7 @@ a{
 }
 .note-and-btn{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 h2{
     font-size: 1.5rem;
@@ -139,7 +187,7 @@ h2{
 }
 .a-bit-of-text{
     display: flex;
-    justify-content:space-between ;
+    justify-content:center ;
 }
 .p-explanation,.n-explanation{
     width: 25rem;
